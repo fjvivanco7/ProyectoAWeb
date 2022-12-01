@@ -456,10 +456,109 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/events-bg.jpg") top center;
+  background: url("../img/hero-bg2.jpg") top center;
   background-size: cover;
   position: relative;
   padding: 0;
+}
+
+#specials{
+  background-color: #000000de;
+}
+
+.imagenl{
+  width: 20%;
+}
+
+.events {
+  background: url(../img/events-bg.jpg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.events::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.events .section-title h2 {
+  color: #fff;
+}
+
+.events .container {
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .events {
+    background-attachment: fixed;
+  }
+}
+
+.events .events-carousel {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 30px;
+}
+
+.events .event-item {
+  color: #fff;
+}
+
+.events .event-item h3 {
+  font-weight: 600;
+  font-size: 26px;
+  color: #cda45e;
+}
+
+.events .event-item .price {
+  font-size: 26px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.events .event-item .price span {
+  border-bottom: 2px solid #cda45e;
+}
+
+.events .event-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.events .event-item ul li {
+  padding-bottom: 10px;
+}
+
+.events .event-item ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #cda45e;
+}
+
+.events .event-item p:last-child {
+  margin-bottom: 0;
+}
+
+.events .swiper-pagination {
+  margin-top: 30px;
+  position: relative;
+}
+
+.events .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+}
+
+.events .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #cda45e;
 }
 
 #hero:before {
@@ -764,7 +863,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background: url("../img/event-custom.jpg") center center;
+  background: url("../img/about-bg1.jpg") center center;
   background-size: cover;
   position: relative;
   padding: 80px 0;
@@ -1203,7 +1302,7 @@ section {
 }
 
 #footer .footer-top {
-  background: #4d8d39;
+  background: #467039;
   border-top: 1px solid #296351;
   border-bottom: 1px solid #334d1b;
   padding: 60px 0 30px 0;
